@@ -3,18 +3,18 @@
   --mobile-breakpoint: 991px;
 
   /* Colors */
-  --background-color: #fff;
-  --text-color: #666;
-  --title-color: #333;
-  --subtitle-text-color: #757575;
-  --border-color: #ccc;
+  --background-color: var(--color-gray-1);
+  --text-color: var(--color-gray-11);
+  --title-color: var(--color-gray-12);
+  --subtitle-text-color: var(--color-gray-11);
+  --border-color: var(--color-gray-6);
 
-  --brand-primary: #1074b6;
-  --brand-second: #2e96ea;
-  --brand-info: #18828a;
+  --brand-primary: var(--color-blue-9);
+  --brand-second: var(--color-blue-8);
+  --brand-info: var(--color-teal-9);
 
   --link-color: var(--text-color);
-  --link-color-hover: #333;
+  --link-color-hover: var(--color-gray-12);
 
   --text-color-body: var(--text-color);
 

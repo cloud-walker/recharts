@@ -115,7 +115,7 @@ a.button {
   display: inline-block;
   font-family: var(--font-family-code), sans-serif;
   font-weight: 700;
-  color: #fff;
+  color: var(--color-gray-12-on-blue);
   background-color: var(--brand-primary);
   border-bottom: 2px solid var(--brand-second);
   padding: 12px 14px;
