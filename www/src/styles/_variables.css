@@ -20,43 +20,69 @@
   --z-index-main-nav: 1040;
 }
 
+/*
+  For variable naming conventions, see: var-naming.md
+*/
+
 :root,
 [data-mode='light'] {
   /* Colors */
+
+  /* Surface colors */
   --color-surface-base: #f7f7f7;
   --color-surface-raised: #fff;
 
-  --color-text: #666;
-  --color-title: #333;
-  --color-subtitle: #757575;
-  --color-border: #ccc;
+  /* Text colors */
+  --color-text-1: #333;
+  --color-text-2: #666;
+  --color-text-3: #757575;
+
+  /* Border colors */
+  --color-border-2: #ccc;
+  --color-border-3: #e6e6e6;
+
+  --color-text: var(--color-text-2);
+  --color-title: var(--color-text-1);
+  --color-subtitle: var(--color-text-3);
+  --color-border: var(--color-border-2);
 
   --brand-primary: #1074b6;
   --brand-second: #2e96ea;
   --brand-info: #18828a;
 
-  --color-link: var(--color-text);
-  --color-link-hover: #333;
+  --color-link: var(--color-text-2);
+  --color-link-hover: var(--color-text-1);
 
-  --color-text-body: var(--color-text);
+  --color-text-body: var(--color-text-2);
 }
 
 [data-mode='dark'] {
   /* Colors */
+
+  /* Surface colors */
   --color-surface-base: #1a1a1a;
   --color-surface-raised: #1f1f1f;
 
-  --color-text: #aaa;
-  --color-title: #ddd;
-  --color-subtitle: #bbb;
-  --color-border: #444;
+  /* Text colors */
+  --color-text-1: #ddd;
+  --color-text-2: #aaa;
+  --color-text-3: #999;
+
+  /* Border colors */
+  --color-border-2: #444;
+  --color-border-3: #363636;
+
+  --color-text: var(--color-text-2);
+  --color-title: var(--color-text-1);
+  --color-subtitle: var(--color-text-3);
+  --color-border: var(--color-border-2);
 
   --brand-primary: #2e96ea;
   --brand-second: #1074b6;
   --brand-info: #1fa4ad;
 
-  --color-link: var(--color-text);
-  --color-link-hover: #ddd;
+  --color-link: var(--color-text-2);
+  --color-link-hover: var(--color-text-1);
 
-  --color-text-body: var(--color-text);
+  --color-text-body: var(--color-text-2);
 }
