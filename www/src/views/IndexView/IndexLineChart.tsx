@@ -46,7 +46,7 @@ const data = [
 export default function IndexLineChart() {
   return (
     <LineChart style={{ width: '100%', aspectRatio: 1.618, maxWidth: 800, margin: 'auto' }} responsive data={data}>
-      <CartesianGrid stroke="#eee" strokeDasharray="5 5" />
+      <CartesianGrid stroke="var(--color-border-3)" strokeDasharray="5 5" />
       <XAxis dataKey="name" />
       <YAxis width="auto" />
       <Line
