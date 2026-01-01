@@ -49,8 +49,24 @@ export default function IndexLineChart() {
       <CartesianGrid stroke="#eee" strokeDasharray="5 5" />
       <XAxis dataKey="name" />
       <YAxis width="auto" />
-      <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-      <Line type="monotone" dataKey="pv" stroke="#82ca9d" />
+      <Line
+        type="monotone"
+        dataKey="uv"
+        stroke="#8884d8"
+        fill="var(--color-surface-base)"
+        activeDot={{
+          stroke: 'var(--color-surface-base)',
+        }}
+      />
+      <Line
+        type="monotone"
+        dataKey="pv"
+        stroke="#82ca9d"
+        fill="var(--color-surface-base)"
+        activeDot={{
+          stroke: 'var(--color-surface-base)',
+        }}
+      />
       <RechartsDevtools />
     </LineChart>
   );
