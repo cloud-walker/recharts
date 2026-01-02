@@ -75,7 +75,6 @@
       gap: 40px;
 
       a {
-        display: inline-block;
         height: 61px;
         font-size: var(--font-size-lg);
         text-decoration: none;
