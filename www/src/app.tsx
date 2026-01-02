@@ -1,4 +1,4 @@
-import { hydrateRoot } from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 
 import { Root } from './containers/Root';
 import { ColorModeProvider, defineColorModeStore } from './components/color-mode';
@@ -8,8 +8,7 @@ if (container == null) {
   throw new Error('Container element with id "app" not found');
 }
 
-hydrateRoot(
-  container,
+createRoot(container).render(
   <ColorModeProvider store={defineColorModeStore()}>
     <Root />
   </ColorModeProvider>,
