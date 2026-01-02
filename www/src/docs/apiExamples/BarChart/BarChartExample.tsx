@@ -1,5 +1,6 @@
-import { BarChart, Legend, XAxis, YAxis, CartesianGrid, Tooltip, Bar } from 'recharts';
+import { BarChart, Legend, XAxis, YAxis, Tooltip, Bar } from 'recharts';
 import { RechartsDevtools } from '@recharts/devtools';
+import { CartesianGrid } from '../../../components/chart';
 
 // #region Sample data
 const data = [

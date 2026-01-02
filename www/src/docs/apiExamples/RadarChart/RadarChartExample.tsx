@@ -44,7 +44,7 @@ const data = [
 // #endregion
 export const RadarChartExample = ({ isAnimationActive = true }: { isAnimationActive?: boolean }) => (
   <RadarChart style={{ width: '100%', maxWidth: '500px', maxHeight: '70vh', aspectRatio: 1 }} responsive data={data}>
-    <PolarGrid />
+    <PolarGrid stroke="var(--color-border-2)" />
     <PolarAngleAxis dataKey="subject" />
     <PolarRadiusAxis angle={30} domain={[0, 150]} />
     <Radar

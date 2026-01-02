@@ -21,7 +21,7 @@ const CellPieExample = ({ isAnimationActive = true }: { isAnimationActive?: bool
         <rect className="checker" x="10" width="5" height="5" y="10" />
       </pattern>
     </defs>
-    <Pie data={data} label isAnimationActive={isAnimationActive}>
+    <Pie data={data} label isAnimationActive={isAnimationActive} stroke="var(--color-surface-base)">
       {data.map((_entry, index) => (
         <Cell key={`cell-${index}`} fill={colors[index]} />
       ))}

@@ -144,7 +144,7 @@ export const TreemapExample = ({ isAnimationActive = true }: { isAnimationActive
       data={data}
       dataKey="size"
       aspectRatio={4 / 3}
-      stroke="#fff"
+      stroke="var(--color-surface-base)"
       fill="#8884d8"
       isAnimationActive={isAnimationActive}
     >

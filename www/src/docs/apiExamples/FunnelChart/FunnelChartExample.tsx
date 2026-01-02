@@ -20,8 +20,8 @@ export const FunnelChartExample = ({ isAnimationActive = true }: { isAnimationAc
     }}
   >
     <Tooltip />
-    <Funnel dataKey="value" data={data} isAnimationActive={isAnimationActive}>
-      <LabelList position="right" fill="#000" stroke="none" dataKey="name" />
+    <Funnel dataKey="value" data={data} isAnimationActive={isAnimationActive} stroke="var(--color-surface-base)">
+      <LabelList position="right" fill="var(--color-text-1)" stroke="none" dataKey="name" />
     </Funnel>
     <RechartsDevtools />
   </FunnelChart>

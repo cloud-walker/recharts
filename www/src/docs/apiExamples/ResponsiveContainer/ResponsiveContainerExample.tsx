@@ -1,5 +1,6 @@
-import { ResponsiveContainer, AreaChart, ReferenceLine, Area, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import { ResponsiveContainer, AreaChart, ReferenceLine, Area, XAxis, YAxis, Tooltip } from 'recharts';
 import { RechartsDevtools } from '@recharts/devtools';
+import { CartesianGrid } from '../../../components/chart';
 
 // #region Sample data
 const data = [

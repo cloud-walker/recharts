@@ -1,5 +1,6 @@
-import { ComposedChart, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Area, Bar, Line } from 'recharts';
+import { ComposedChart, XAxis, YAxis, Tooltip, Legend, Area, Bar, Line } from 'recharts';
 import { RechartsDevtools } from '@recharts/devtools';
+import { CartesianGrid } from '../../../components/chart';
 
 // #region Sample data
 const data = [
@@ -54,7 +55,7 @@ const ComposedChartExample = ({ isAnimationActive = true }: { isAnimationActive?
     responsive
     data={data}
   >
-    <CartesianGrid stroke="#f5f5f5" />
+    <CartesianGrid />
     <XAxis dataKey="name" />
     <YAxis width="auto" />
     <Legend />
