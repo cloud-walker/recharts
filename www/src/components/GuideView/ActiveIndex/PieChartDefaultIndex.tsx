@@ -14,6 +14,7 @@ export default function PieChartDefaultIndex({ isAnimationActive = true }: { isA
           { name: 'Page C', uv: 868 },
         ]}
         dataKey="uv"
+        stroke="var(--color-surface-base)"
         isAnimationActive={isAnimationActive}
       />
       <Tooltip defaultIndex={2} />

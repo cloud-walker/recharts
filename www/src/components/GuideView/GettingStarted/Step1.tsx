@@ -1,5 +1,6 @@
 import { RechartsDevtools } from '@recharts/devtools';
-import { Line, LineChart } from 'recharts';
+import { LineChart } from 'recharts';
+import { Line } from '../../chart';
 
 // #region Sample data
 const data = [
