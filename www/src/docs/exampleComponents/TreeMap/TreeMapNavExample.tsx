@@ -11,7 +11,7 @@ const TreeMapNavExample = () => {
       data={data}
       dataKey="size"
       aspectRatio={2 * 1.618}
-      stroke="#fff"
+      stroke="var(--color-surface-base)"
       fill="#8884d8"
     />
   );

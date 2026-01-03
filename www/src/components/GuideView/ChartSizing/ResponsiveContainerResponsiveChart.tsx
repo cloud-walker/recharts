@@ -1,5 +1,6 @@
-import { Line, LineChart, ResponsiveContainer } from 'recharts';
+import { LineChart, ResponsiveContainer } from 'recharts';
 import { RechartsDevtools } from '@recharts/devtools';
+import { Line } from '../../chart';
 
 export default function ResponsiveContainerResponsiveChart() {
   return (

@@ -2,9 +2,9 @@ import { Pie, PieChart } from 'recharts';
 
 // #region Sample data
 const data = [
-  { value: 400, fill: 'white' },
-  { value: 300, fill: 'blue' },
-  { value: 400, fill: 'red' },
+  { value: 400, fill: '#82ca9d' },
+  { value: 300, fill: '#8884d8' },
+  { value: 400, fill: '#413ea0' },
 ];
 
 // #endregion
@@ -16,7 +16,7 @@ const PieChartNavExample = ({ isAnimationActive = true }: { isAnimationActive?: 
         dataKey="value"
         nameKey="name"
         outerRadius="120%"
-        stroke="black"
+        stroke="var(--color-surface-base)"
         isAnimationActive={isAnimationActive}
       />
     </PieChart>

@@ -59,6 +59,7 @@
   --color-link-hover: var(--color-text-1);
 
   --color-text-body: var(--color-text-2);
+  --color-clickable-example: black;
 }
 
 [data-mode='dark'] {
@@ -95,4 +96,5 @@
   --color-link-hover: var(--color-text-1);
 
   --color-text-body: var(--color-text-2);
+  --color-clickable-example: white;
 }

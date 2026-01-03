@@ -1,4 +1,5 @@
-import { Line, LineChart } from 'recharts';
+import { LineChart } from 'recharts';
+import { Line } from '../../../components/chart';
 
 const LineChartNavExample = () => {
   return (

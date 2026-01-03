@@ -1,4 +1,5 @@
-import { ComposedChart, Line, Bar } from 'recharts';
+import { ComposedChart, Bar } from 'recharts';
+import { Line } from '../../../components/chart';
 
 const ComposedChartNavExample = () => {
   return (
