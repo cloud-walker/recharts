@@ -31,7 +31,7 @@
   /* Surface colors */
   --color-surface-base: #fff;
   --color-surface-raised: #fff;
-  --color-surface-sunken: #f0f0f0;
+  --color-surface-sunken: #f7fafc;
 
   /* Text colors */
   --color-text-1: #333;
@@ -67,7 +67,7 @@
   /* Surface colors */
   --color-surface-base: #1a1a1a;
   --color-surface-raised: #1f1f1f;
-  --color-surface-sunken: #161616;
+  --color-surface-sunken: #151718;
 
   /* Text colors */
   --color-text-1: #ddd;
