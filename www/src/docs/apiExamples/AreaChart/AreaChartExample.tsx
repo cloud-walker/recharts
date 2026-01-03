@@ -1,6 +1,6 @@
-import { Area, AreaChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, XAxis, YAxis } from 'recharts';
 import { RechartsDevtools } from '@recharts/devtools';
-import { CartesianGrid } from '../../../components/chart';
+import { CartesianGrid, Tooltip } from '../../../components/chart';
 
 // #region Sample data
 const data = [
@@ -76,6 +76,9 @@ const AreaChartExample = ({ isAnimationActive = true }) => (
       stroke="#8884d8"
       fillOpacity={1}
       fill="url(#colorUv)"
+      activeDot={{
+        stroke: 'var(--color-surface-base)',
+      }}
       isAnimationActive={isAnimationActive}
     />
     <Area
@@ -84,6 +87,9 @@ const AreaChartExample = ({ isAnimationActive = true }) => (
       stroke="#82ca9d"
       fillOpacity={1}
       fill="url(#colorPv)"
+      activeDot={{
+        stroke: 'var(--color-surface-base)',
+      }}
       isAnimationActive={isAnimationActive}
     />
     <RechartsDevtools />

@@ -43,6 +43,7 @@
   --color-border-3: #e6e6e6;
 
   /* Background colors */
+  --color-gray: #eee;
   --color-interactive-3: #f5f5f5;
 
   --color-text: var(--color-text-2);
@@ -78,6 +79,7 @@
   --color-border-3: #363636;
 
   /* Background colors */
+  --color-gray: #333;
   --color-interactive-3: #222;
 
   --color-text: var(--color-text-2);

@@ -1,6 +1,7 @@
-import { ScatterChart, Scatter, XAxis, YAxis, ZAxis, Tooltip, Legend } from 'recharts';
+import { ScatterChart, Scatter, XAxis, YAxis, ZAxis, Legend } from 'recharts';
 import { RechartsDevtools } from '@recharts/devtools';
-import { CartesianGrid } from '../../../components/chart';
+
+import { CartesianGrid, Tooltip } from '../../../components/chart';
 
 // #region Sample data
 const data01 = [

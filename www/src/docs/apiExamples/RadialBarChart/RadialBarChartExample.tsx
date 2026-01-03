@@ -1,5 +1,7 @@
-import { RadialBarChart, RadialBar, Legend, Tooltip } from 'recharts';
+import { RadialBarChart, RadialBar, Legend } from 'recharts';
 import { RechartsDevtools } from '@recharts/devtools';
+
+import { Tooltip } from '../../../components/chart';
 
 // #region Sample data
 const data = [
@@ -61,8 +63,10 @@ export const RadialBarChartExample = ({ isAnimationActive = true }: { isAnimatio
     endAngle={0}
   >
     <RadialBar
-      label={{ fill: '#666', position: 'insideStart' }}
-      background
+      label={{ fill: 'var(--color-surface-base)', position: 'insideStart' }}
+      background={{
+        fill: 'var(--color-gray)',
+      }}
       dataKey="uv"
       isAnimationActive={isAnimationActive}
     />
