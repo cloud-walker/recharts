@@ -42,6 +42,7 @@ export default function TwoLevelPieChart({
         cy="50%"
         outerRadius="50%"
         fill="#8884d8"
+        stroke="var(--color-surface-base)"
         isAnimationActive={isAnimationActive}
       />
       <Pie
@@ -52,6 +53,7 @@ export default function TwoLevelPieChart({
         innerRadius="60%"
         outerRadius="80%"
         fill="#82ca9d"
+        stroke="var(--color-surface-base)"
         label
         isAnimationActive={isAnimationActive}
       />

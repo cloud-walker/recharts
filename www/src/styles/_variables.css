@@ -60,6 +60,17 @@
 
   --color-text-body: var(--color-text-2);
   --color-clickable-example: black;
+
+  --color-code-keyword: #0077aa;
+  --color-code-function: #6639ba;
+  --color-code-separator: #24292f;
+  --color-code-property: #116329;
+  --color-code-value: #953800;
+  --color-code-operator: #0550ae;
+  --color-code-comment: #6a737d;
+  --color-code-string: #0a3069;
+  --color-code-bool: var(--color-code-operator);
+  --color-code-attribute: #007070;
 }
 
 [data-mode='dark'] {
@@ -97,4 +108,15 @@
 
   --color-text-body: var(--color-text-2);
   --color-clickable-example: white;
+
+  --color-code-keyword: oklab(73.952% -0.06404 -0.09922);
+  --color-code-function: oklch(77.43% 0.19093 293.838);
+  --color-code-separator: oklch(87.85% 0.01323 253.087);
+  --color-code-property: oklch(73.906% 0.11791 148.086);
+  --color-code-value: oklch(90.566% 0.13704 43.334);
+  --color-code-operator: oklch(75.096% 0.1642 258.195);
+  --color-code-comment: oklch(55.137% 0.01905 251.048);
+  --color-code-string: oklch(82.104% 0.10849 259.129);
+  --color-code-bool: var(--color-code-operator);
+  --color-code-attribute: oklch(80.36% 0.08427 194.807);
 }
