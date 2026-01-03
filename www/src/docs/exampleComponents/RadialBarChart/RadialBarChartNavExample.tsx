@@ -11,7 +11,12 @@ const data = [
 const RadialBarChartNavExample = () => {
   return (
     <RadialBarChart responsive innerRadius="20%" outerRadius="130%" data={data} style={{ aspectRatio: 1 }}>
-      <RadialBar background dataKey="uv" />
+      <RadialBar
+        background={{
+          fill: 'var(--color-gray)',
+        }}
+        dataKey="uv"
+      />
       <PolarAngleAxis domain={[0, 44]} type="number" dataKey="uv" />
     </RadialBarChart>
   );
