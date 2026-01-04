@@ -3,9 +3,10 @@ import { FiMoon, FiMonitor, FiSun } from 'react-icons/fi';
 
 import styles from './ColorModePicker.module.css';
 import { useColorModeStore } from './ColorModeProvider';
+import { ColorModeState } from './defineColorModeStore';
 
-function ColorModePickerIcon(props: { mode: 'light' | 'dark' | 'system' }) {
-  if (props.mode === 'system') {
+function ColorModePickerIcon(props: ColorModeState) {
+  if (props.origin === 'system') {
     return <FiMonitor />;
   }
   if (props.mode === 'light') {
@@ -35,8 +36,9 @@ export function ColorModePicker(props: React.ComponentPropsWithRef<'button'>) {
           store.dispatch('system');
         }
       }}
+      aria-label={state.origin === 'system' ? 'system' : state.mode}
     >
-      <ColorModePickerIcon mode={state.mode} />
+      <ColorModePickerIcon {...state} />
     </button>
   );
 }
