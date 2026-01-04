@@ -103,7 +103,7 @@ const PercentAreaChart = () => {
       <Tooltip content={renderTooltipContent} />
       <Area type="monotone" dataKey="a" stackId="1" stroke="var(--color-chart-1)" fill="var(--color-chart-1)" />
       <Area type="monotone" dataKey="b" stackId="1" stroke="var(--color-chart-2)" fill="var(--color-chart-2)" />
-      <Area type="monotone" dataKey="c" stackId="1" stroke="#ffc658" fill="#ffc658" />
+      <Area type="monotone" dataKey="c" stackId="1" stroke="var(--color-chart-3)" fill="var(--color-chart-3)" />
       <RechartsDevtools />
     </AreaChart>
   );

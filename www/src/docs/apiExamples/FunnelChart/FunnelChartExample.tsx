@@ -4,10 +4,10 @@ import { RechartsDevtools } from '@recharts/devtools';
 // #region Sample data
 const data = [
   { value: 100, name: 'Impression', fill: 'var(--color-chart-1)' },
-  { value: 80, name: 'Click', fill: '#83a6ed' },
-  { value: 50, name: 'Visit', fill: '#8dd1e1' },
+  { value: 80, name: 'Click', fill: 'var(--color-chart-7)' },
+  { value: 50, name: 'Visit', fill: 'var(--color-chart-4)' },
   { value: 40, name: 'Consult', fill: 'var(--color-chart-2)' },
-  { value: 26, name: 'Order', fill: '#a4de6c' },
+  { value: 26, name: 'Order', fill: 'var(--color-chart-5)' },
 ];
 
 // #endregion

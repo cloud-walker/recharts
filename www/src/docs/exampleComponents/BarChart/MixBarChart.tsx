@@ -68,7 +68,7 @@ const MixBarChart = () => {
       <Legend />
       <Bar dataKey="pv" stackId="a" fill="var(--color-chart-1)" />
       <Bar dataKey="amt" stackId="a" fill="var(--color-chart-2)" />
-      <Bar dataKey="uv" fill="#ffc658" />
+      <Bar dataKey="uv" fill="var(--color-chart-3)" />
       <RechartsDevtools />
     </BarChart>
   );

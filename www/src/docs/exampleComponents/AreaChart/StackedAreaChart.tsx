@@ -67,7 +67,7 @@ const StackedAreaChart = () => {
       <Tooltip />
       <Area type="monotone" dataKey="uv" stackId="1" stroke="var(--color-chart-1)" fill="var(--color-chart-1)" />
       <Area type="monotone" dataKey="pv" stackId="1" stroke="var(--color-chart-2)" fill="var(--color-chart-2)" />
-      <Area type="monotone" dataKey="amt" stackId="1" stroke="#ffc658" fill="#ffc658" />
+      <Area type="monotone" dataKey="amt" stackId="1" stroke="var(--color-chart-3)" fill="var(--color-chart-3)" />
       <RechartsDevtools />
     </AreaChart>
   );

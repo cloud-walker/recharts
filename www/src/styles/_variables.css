@@ -76,6 +76,11 @@
 
   --color-chart-1: #8884d8; /* Indigo */
   --color-chart-2: #82ca9d; /* Green */
+  --color-chart-3: #ffc658; /* Orange */
+  --color-chart-4: #8dd1e1; /* Cyan */
+  --color-chart-5: #a4de6c; /* Light Green */
+  --color-chart-6: #d0ed57; /* Lime */
+  --color-chart-7: #83a6ed; /* Violet blue */
 }
 
 [data-mode='dark'] {
@@ -129,4 +134,9 @@
 
   --color-chart-1: #8884d8; /* Indigo */
   --color-chart-2: #82ca9d; /* Green */
+  --color-chart-3: #ffc658; /* Orange */
+  --color-chart-4: #8dd1e1; /* Cyan */
+  --color-chart-5: #a4de6c; /* Light Green */
+  --color-chart-6: #d0ed57; /* Lime */
+  --color-chart-7: #83a6ed; /* Violet blue */
 }

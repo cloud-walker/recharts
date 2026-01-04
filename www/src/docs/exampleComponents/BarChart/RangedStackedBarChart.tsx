@@ -29,7 +29,7 @@ const RangedStackedBarChart = ({ isAnimationActive = true }: { isAnimationActive
     <BarStack radius={25}>
       <Bar dataKey="value1" maxBarSize={50} fill="var(--color-chart-1)" isAnimationActive={isAnimationActive} />
       <Bar dataKey="value2" maxBarSize={50} fill="var(--color-chart-2)" isAnimationActive={isAnimationActive} />
-      <Bar dataKey="value3" maxBarSize={50} fill="#ffc658" isAnimationActive={isAnimationActive} />
+      <Bar dataKey="value3" maxBarSize={50} fill="var(--color-chart-3)" isAnimationActive={isAnimationActive} />
     </BarStack>
     <RechartsDevtools />
   </BarChart>

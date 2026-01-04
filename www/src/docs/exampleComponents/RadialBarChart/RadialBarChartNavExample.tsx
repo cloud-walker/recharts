@@ -3,7 +3,7 @@ import { RadialBarChart, RadialBar, PolarAngleAxis } from 'recharts';
 // #region Sample data
 const data = [
   { name: '18-24', uv: 31.47, pv: 2400, fill: 'var(--color-chart-1)' },
-  { name: '30-34', uv: 15.69, pv: 1398, fill: '#8dd1e1' },
+  { name: '30-34', uv: 15.69, pv: 1398, fill: 'var(--color-chart-4)' },
   { name: '35-39', uv: 38.22, pv: 9800, fill: 'var(--color-chart-2)' },
 ];
 

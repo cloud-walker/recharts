@@ -12,10 +12,10 @@ const data = [
 ];
 const colors = [
   'var(--color-chart-1)',
-  '#83a6ed',
-  '#8dd1e1',
+  'var(--color-chart-7)',
+  'var(--color-chart-4)',
   'var(--color-chart-2)',
-  '#a4de6c',
+  'var(--color-chart-5)',
   'url(#pattern-checkers)',
 ];
 
