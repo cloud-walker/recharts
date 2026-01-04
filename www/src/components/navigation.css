@@ -71,6 +71,7 @@
     .navigation-items {
       display: flex;
       flex-direction: row;
+      align-items: center;
       flex: 1;
       gap: 40px;
 
@@ -89,9 +90,6 @@
   }
 }
 
-.language-switch {
-  padding: 0 2rem;
-}
 .slide-right-mobile-nav {
   position: fixed;
   top: 0;

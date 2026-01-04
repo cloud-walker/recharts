@@ -1,5 +1,6 @@
 import { useSyncExternalStore } from 'react';
 
+import styles from './ColorModePicker.module.css';
 import { useColorModeStore } from './ColorModeProvider';
 
 export function ColorModePicker(props: React.ComponentPropsWithRef<'button'>) {
@@ -8,6 +9,7 @@ export function ColorModePicker(props: React.ComponentPropsWithRef<'button'>) {
   return (
     <button
       {...props}
+      className={styles.ColorModePicker}
       type="button"
       onClick={() => {
         if (state.origin === 'system') {

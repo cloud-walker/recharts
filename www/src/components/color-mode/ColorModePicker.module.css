@@ -1,0 +1,11 @@
+.ColorModePicker {
+  background-color: unset;
+  height: min-content;
+  border: 0 none;
+  display: inline-flex;
+  padding: 0;
+
+  &:hover {
+    color: var(--color-text-1);
+  }
+}
