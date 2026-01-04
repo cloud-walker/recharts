@@ -1,5 +1,6 @@
-import { Bar, BarChart, Tooltip } from 'recharts';
+import { Bar, BarChart } from 'recharts';
 import { RechartsDevtools } from '@recharts/devtools';
+import { Tooltip } from '../../chart';
 
 export default function BarChartClickable() {
   return (

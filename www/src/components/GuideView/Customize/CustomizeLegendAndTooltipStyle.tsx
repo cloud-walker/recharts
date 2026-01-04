@@ -1,6 +1,7 @@
 // #region Sample data
-import { Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, Legend, XAxis, YAxis } from 'recharts';
 import { RechartsDevtools } from '@recharts/devtools';
+import { Tooltip, CartesianGrid } from '../../chart';
 
 const data = [
   {
@@ -54,19 +55,25 @@ export default function CustomizeLegendAndTooltipStyle() {
     <BarChart width={600} height={300} data={data} margin={margin}>
       <XAxis dataKey="name" stroke="#8884d8" />
       <YAxis />
-      <Tooltip wrapperStyle={{ width: 100, backgroundColor: '#ccc' }} />
+      <Tooltip
+        wrapperStyle={{ width: 100, backgroundColor: '#ccc' }}
+        cursor={{
+          fill: 'var(--color-interactive-3)',
+          stroke: 'var(--color-interactive-3)',
+        }}
+      />
       <Legend
         width={100}
         wrapperStyle={{
           top: 40,
           right: 20,
-          backgroundColor: '#f5f5f5',
-          border: '1px solid #d5d5d5',
+          backgroundColor: 'var(--color-surface-raised)',
+          border: '1px solid var(--color-border-2)',
           borderRadius: 3,
           lineHeight: '40px',
         }}
       />
-      <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+      <CartesianGrid strokeDasharray="5 5" />
       <Bar dataKey="uv" fill="#8884d8" barSize={30} />
       <RechartsDevtools />
     </BarChart>
