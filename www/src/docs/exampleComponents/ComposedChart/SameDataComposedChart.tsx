@@ -60,8 +60,8 @@ const SameDataComposedChart = () => {
       <YAxis width="auto" />
       <Tooltip />
       <Legend />
-      <Bar dataKey="uv" barSize={20} fill="#413ea0" />
-      <Line type="monotone" dataKey="uv" stroke="#ff7300" />
+      <Bar dataKey="uv" barSize={20} fill="var(--color-chart-9)" />
+      <Line type="monotone" dataKey="uv" stroke="var(--color-chart-8)" />
       <RechartsDevtools />
     </ComposedChart>
   );

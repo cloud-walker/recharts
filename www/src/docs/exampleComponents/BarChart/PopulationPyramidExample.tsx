@@ -92,7 +92,7 @@ export default function PopulationPyramidExample({ defaultIndex }: { defaultInde
         stackId="age"
         name="Female"
         dataKey="female"
-        fill="#ed7485"
+        fill="var(--color-chart-11)"
         radius={[0, 5, 5, 0]}
         label={{ position: 'right', formatter: formatPercent }}
       />
@@ -100,7 +100,7 @@ export default function PopulationPyramidExample({ defaultIndex }: { defaultInde
         stackId="age"
         name="Male"
         dataKey="male"
-        fill="#6ea1c7"
+        fill="var(--color-chart-10)"
         radius={[0, 5, 5, 0]}
         label={{ position: 'right', formatter: formatPercent }}
       />

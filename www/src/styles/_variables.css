@@ -81,6 +81,10 @@
   --color-chart-5: #a4de6c; /* Light Green */
   --color-chart-6: #d0ed57; /* Lime */
   --color-chart-7: #83a6ed; /* Violet blue */
+  --color-chart-8: #ff7300; /* Orange Red */
+  --color-chart-9: #413ea0; /* Blue */
+  --color-chart-10: #6ea1c7; /* Cyan */
+  --color-chart-11: #ed7485; /* Pink */
 }
 
 [data-mode='dark'] {
@@ -132,11 +136,15 @@
   --color-code-bool: var(--color-code-operator);
   --color-code-attribute: oklch(80.36% 0.08427 194.807);
 
-  --color-chart-1: #8884d8; /* Indigo */
-  --color-chart-2: #82ca9d; /* Green */
-  --color-chart-3: #ffc658; /* Orange */
-  --color-chart-4: #8dd1e1; /* Cyan */
-  --color-chart-5: #a4de6c; /* Light Green */
-  --color-chart-6: #d0ed57; /* Lime */
-  --color-chart-7: #83a6ed; /* Violet blue */
+  --color-chart-1: red; /* Indigo */
+  --color-chart-2: red; /* Green */
+  --color-chart-3: red; /* Orange */
+  --color-chart-4: red; /* Cyan */
+  --color-chart-5: red; /* Light Green */
+  --color-chart-6: red; /* Lime */
+  --color-chart-7: red; /* Violet blue */
+  --color-chart-8: red; /* Orange Red */
+  --color-chart-9: red; /* Blue */
+  --color-chart-10: red; /* Cyan */
+  --color-chart-11: red; /* Pink */
 }

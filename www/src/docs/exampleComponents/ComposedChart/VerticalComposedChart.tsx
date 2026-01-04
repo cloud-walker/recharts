@@ -62,8 +62,8 @@ const VerticalComposedChart = () => {
       <Tooltip />
       <Legend />
       <Area dataKey="amt" fill="var(--color-chart-1)" stroke="var(--color-chart-1)" />
-      <Bar dataKey="pv" barSize={20} fill="#413ea0" />
-      <Line dataKey="uv" stroke="#ff7300" />
+      <Bar dataKey="pv" barSize={20} fill="var(--color-chart-9)" />
+      <Line dataKey="uv" stroke="var(--color-chart-8)" />
       <RechartsDevtools />
     </ComposedChart>
   );

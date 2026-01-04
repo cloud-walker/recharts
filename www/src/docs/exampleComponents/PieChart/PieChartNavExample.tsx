@@ -4,7 +4,7 @@ import { Pie, PieChart } from 'recharts';
 const data = [
   { value: 400, fill: 'var(--color-chart-2)' },
   { value: 300, fill: 'var(--color-chart-1)' },
-  { value: 400, fill: '#413ea0' },
+  { value: 400, fill: 'var(--color-chart-9)' },
 ];
 
 // #endregion
