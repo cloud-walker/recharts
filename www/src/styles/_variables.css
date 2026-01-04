@@ -63,16 +63,19 @@
   --color-text-body: var(--color-text-2);
   --color-clickable-example: black;
 
-  --color-code-keyword: #0077aa;
-  --color-code-function: #6639ba;
-  --color-code-separator: #24292f;
-  --color-code-property: #116329;
-  --color-code-value: #953800;
-  --color-code-operator: #0550ae;
-  --color-code-comment: #6a737d;
-  --color-code-string: #0a3069;
+  --color-code-keyword: #0077aa; /* Cyan */
+  --color-code-function: #6639ba; /* Indigo */
+  --color-code-separator: #24292f; /* Gray */
+  --color-code-property: #116329; /* Green */
+  --color-code-value: #953800; /* Orange */
+  --color-code-operator: #0550ae; /* Blue */
+  --color-code-comment: #6a737d; /* Gray */
+  --color-code-string: #0a3069; /* Blue */
   --color-code-bool: var(--color-code-operator);
-  --color-code-attribute: #007070;
+  --color-code-attribute: #007070; /* Teal */
+
+  --color-chart-1: #8884d8; /* Indigo */
+  --color-chart-2: #82ca9d; /* Green */
 }
 
 [data-mode='dark'] {
@@ -123,4 +126,7 @@
   --color-code-string: oklch(82.104% 0.10849 259.129);
   --color-code-bool: var(--color-code-operator);
   --color-code-attribute: oklch(80.36% 0.08427 194.807);
+
+  --color-chart-1: #8884d8; /* Indigo */
+  --color-chart-2: #82ca9d; /* Green */
 }

@@ -53,8 +53,8 @@ const BarChartExample = ({ isAnimationActive = true }) => (
       }}
     />
     <Legend />
-    <Bar dataKey="pv" fill="#8884d8" isAnimationActive={isAnimationActive} />
-    <Bar dataKey="uv" fill="#82ca9d" isAnimationActive={isAnimationActive} />
+    <Bar dataKey="pv" fill="var(--color-chart-1)" isAnimationActive={isAnimationActive} />
+    <Bar dataKey="uv" fill="var(--color-chart-2)" isAnimationActive={isAnimationActive} />
     <RechartsDevtools />
   </BarChart>
 );

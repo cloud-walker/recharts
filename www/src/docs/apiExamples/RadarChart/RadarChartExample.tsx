@@ -50,16 +50,16 @@ export const RadarChartExample = ({ isAnimationActive = true }: { isAnimationAct
     <Radar
       name="Mike"
       dataKey="A"
-      stroke="#8884d8"
-      fill="#8884d8"
+      stroke="var(--color-chart-1)"
+      fill="var(--color-chart-1)"
       fillOpacity={0.6}
       isAnimationActive={isAnimationActive}
     />
     <Radar
       name="Lily"
       dataKey="B"
-      stroke="#82ca9d"
-      fill="#82ca9d"
+      stroke="var(--color-chart-2)"
+      fill="var(--color-chart-2)"
       fillOpacity={0.6}
       isAnimationActive={isAnimationActive}
     />

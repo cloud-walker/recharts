@@ -68,8 +68,8 @@ const CardinalAreaChart = () => {
       <XAxis dataKey="name" />
       <YAxis width="auto" />
       <Tooltip />
-      <Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" fillOpacity={0.3} />
-      <Area type={cardinal} dataKey="uv" stroke="#82ca9d" fill="#82ca9d" fillOpacity={0.3} />
+      <Area type="monotone" dataKey="uv" stroke="var(--color-chart-1)" fill="var(--color-chart-1)" fillOpacity={0.3} />
+      <Area type={cardinal} dataKey="uv" stroke="var(--color-chart-2)" fill="var(--color-chart-2)" fillOpacity={0.3} />
       <RechartsDevtools />
     </AreaChart>
   );

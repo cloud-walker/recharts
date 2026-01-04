@@ -145,7 +145,7 @@ export const TreemapExample = ({ isAnimationActive = true }: { isAnimationActive
       dataKey="size"
       aspectRatio={4 / 3}
       stroke="var(--color-surface-base)"
-      fill="#8884d8"
+      fill="var(--color-chart-1)"
       isAnimationActive={isAnimationActive}
     >
       <RechartsDevtools />

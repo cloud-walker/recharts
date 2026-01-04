@@ -68,8 +68,13 @@ export default function Example() {
       <YAxis width="auto" />
       <Tooltip />
       <Legend />
-      <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8, stroke: 'var(--color-surface-base)' }} />
-      <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+      <Line
+        type="monotone"
+        dataKey="pv"
+        stroke="var(--color-chart-1)"
+        activeDot={{ r: 8, stroke: 'var(--color-surface-base)' }}
+      />
+      <Line type="monotone" dataKey="uv" stroke="var(--color-chart-2)" />
       <RechartsDevtools />
     </LineChart>
   );

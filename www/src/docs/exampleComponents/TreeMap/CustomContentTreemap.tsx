@@ -176,7 +176,7 @@ const CustomContentTreemap = () => {
       data={data}
       dataKey="size"
       stroke="#fff"
-      fill="#8884d8"
+      fill="var(--color-chart-1)"
       content={CustomizedContent}
     >
       <RechartsDevtools />

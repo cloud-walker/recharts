@@ -51,7 +51,7 @@ export const ReferenceDotExample = ({ isAnimationActive = true }: { isAnimationA
       <CartesianGrid />
       <XAxis dataKey="x" type="number" name="stature" unit="cm" />
       <YAxis dataKey="y" type="number" name="weight" unit="kg" width="auto" />
-      <Scatter name="A school" data={data} fill="#8884d8" isAnimationActive={isAnimationActive} />
+      <Scatter name="A school" data={data} fill="var(--color-chart-1)" isAnimationActive={isAnimationActive} />
       {mean && <ReferenceDot {...mean} r={20} fill="red" stroke="none" />}
       <Tooltip cursor={{ strokeDasharray: '3 3' }} />
       <RechartsDevtools />

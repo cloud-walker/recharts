@@ -6,7 +6,7 @@ const AreaChartNavExample = () => {
       <Area
         type="monotone"
         dataKey="val"
-        stroke="#8884d8"
+        stroke="var(--color-chart-1)"
         strokeWidth={2}
         dot={false}
         activeDot={{

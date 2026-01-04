@@ -84,8 +84,8 @@ const CustomizedLabelLineChart = () => {
       <YAxis width="auto" />
       <Tooltip />
       <Legend />
-      <Line type="monotone" dataKey="pv" stroke="#8884d8" label={CustomizedLabel} />
-      <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+      <Line type="monotone" dataKey="pv" stroke="var(--color-chart-1)" label={CustomizedLabel} />
+      <Line type="monotone" dataKey="uv" stroke="var(--color-chart-2)" />
       <RechartsDevtools />
     </LineChart>
   );

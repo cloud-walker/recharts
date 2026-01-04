@@ -10,7 +10,14 @@ const data = [
   { name: 'Group E', value: 278 },
   { name: 'Group F', value: 189 },
 ];
-const colors = ['#8884d8', '#83a6ed', '#8dd1e1', '#82ca9d', '#a4de6c', 'url(#pattern-checkers)'];
+const colors = [
+  'var(--color-chart-1)',
+  '#83a6ed',
+  '#8dd1e1',
+  'var(--color-chart-2)',
+  '#a4de6c',
+  'url(#pattern-checkers)',
+];
 
 // #endregion
 const CellBarExample = ({ isAnimationActive = true }: { isAnimationActive?: boolean }) => (

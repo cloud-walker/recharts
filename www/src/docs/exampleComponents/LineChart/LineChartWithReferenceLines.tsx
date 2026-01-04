@@ -68,8 +68,8 @@ export default function Example() {
       <Legend />
       <ReferenceLine x="Page C" stroke="red" label="Max PV PAGE" />
       <ReferenceLine y={9800} label="Max" stroke="red" />
-      <Line type="monotone" dataKey="pv" stroke="#8884d8" />
-      <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+      <Line type="monotone" dataKey="pv" stroke="var(--color-chart-1)" />
+      <Line type="monotone" dataKey="uv" stroke="var(--color-chart-2)" />
       <RechartsDevtools />
     </LineChart>
   );

@@ -53,7 +53,7 @@ const margin = {
 export default function CustomizeLegendAndTooltipStyle() {
   return (
     <BarChart width={600} height={300} data={data} margin={margin}>
-      <XAxis dataKey="name" stroke="#8884d8" />
+      <XAxis dataKey="name" stroke="var(--color-chart-1)" />
       <YAxis />
       <Tooltip
         wrapperStyle={{ width: 100, backgroundColor: '#ccc' }}
@@ -74,7 +74,7 @@ export default function CustomizeLegendAndTooltipStyle() {
         }}
       />
       <CartesianGrid strokeDasharray="5 5" />
-      <Bar dataKey="uv" fill="#8884d8" barSize={30} />
+      <Bar dataKey="uv" fill="var(--color-chart-1)" barSize={30} />
       <RechartsDevtools />
     </BarChart>
   );

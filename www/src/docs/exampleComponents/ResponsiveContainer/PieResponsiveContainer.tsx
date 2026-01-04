@@ -14,7 +14,7 @@ const Example = () => {
     <div style={{ width: '100%', height: 300 }}>
       <ResponsiveContainer>
         <PieChart>
-          <Pie dataKey="value" data={data} fill="#8884d8" label />
+          <Pie dataKey="value" data={data} fill="var(--color-chart-1)" label />
         </PieChart>
       </ResponsiveContainer>
     </div>

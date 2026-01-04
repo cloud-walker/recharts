@@ -2,8 +2,8 @@ import { Pie, PieChart } from 'recharts';
 
 // #region Sample data
 const data = [
-  { value: 400, fill: '#82ca9d' },
-  { value: 300, fill: '#8884d8' },
+  { value: 400, fill: 'var(--color-chart-2)' },
+  { value: 300, fill: 'var(--color-chart-1)' },
   { value: 400, fill: '#413ea0' },
 ];
 

@@ -7,7 +7,7 @@ const data = [
     name: '18-24',
     uv: 31.47,
     pv: 2400,
-    fill: '#8884d8',
+    fill: 'var(--color-chart-1)',
   },
   {
     name: '25-29',
@@ -25,7 +25,7 @@ const data = [
     name: '35-39',
     uv: 8.22,
     pv: 9800,
-    fill: '#82ca9d',
+    fill: 'var(--color-chart-2)',
   },
   {
     name: '40-49',

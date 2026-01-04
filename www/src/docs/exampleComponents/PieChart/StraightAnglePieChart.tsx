@@ -23,7 +23,7 @@ export default function StraightAnglePieChart({ isAnimationActive = true }: { is
         cx="50%"
         cy="100%"
         outerRadius="120%"
-        fill="#8884d8"
+        fill="var(--color-chart-1)"
         label
         isAnimationActive={isAnimationActive}
       />

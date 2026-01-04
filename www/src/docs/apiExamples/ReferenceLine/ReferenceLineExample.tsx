@@ -67,8 +67,8 @@ const ReferenceLineExample = ({ isAnimationActive = true }: { isAnimationActive?
     <Area
       type="monotone"
       dataKey="uv"
-      stroke="#8884d8"
-      fill="#8884d8"
+      stroke="var(--color-chart-1)"
+      fill="var(--color-chart-1)"
       fillOpacity={0.3}
       isAnimationActive={isAnimationActive}
     />

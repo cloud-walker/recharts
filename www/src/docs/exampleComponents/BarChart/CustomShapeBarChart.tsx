@@ -79,7 +79,7 @@ export default function CustomShapeBarChart() {
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" />
       <YAxis width="auto" />
-      <Bar dataKey="uv" fill="#8884d8" shape={TriangleBar} label={{ position: 'top' }}>
+      <Bar dataKey="uv" fill="var(--color-chart-1)" shape={TriangleBar} label={{ position: 'top' }}>
         {data.map((_entry, index) => (
           <Cell key={`cell-${index}`} fill={colors[index % 20]} />
         ))}

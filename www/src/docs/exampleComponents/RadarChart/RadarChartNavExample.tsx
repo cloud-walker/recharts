@@ -18,8 +18,8 @@ const RadarChartNavExample = () => {
       <Radar
         name="Mike"
         dataKey="A"
-        stroke="#8884d8"
-        fill="#8884d8"
+        stroke="var(--color-chart-1)"
+        fill="var(--color-chart-1)"
         fillOpacity={0.6}
         activeDot={{
           stroke: 'var(--color-surface-base)',

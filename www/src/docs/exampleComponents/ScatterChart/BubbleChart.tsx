@@ -137,7 +137,7 @@ const MyTooltip = ({ defaultIndex }: { defaultIndex?: TooltipIndex }) => (
   />
 );
 
-const Bubbles = ({ data }: { data: Array<unknown> }) => <Scatter data={data} fill="#8884d8" />;
+const Bubbles = ({ data }: { data: Array<unknown> }) => <Scatter data={data} fill="var(--color-chart-1)" />;
 
 const DayChart = ({ children }: { children: ReactNode }) => (
   <ScatterChart

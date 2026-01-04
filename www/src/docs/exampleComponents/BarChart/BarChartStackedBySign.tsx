@@ -68,8 +68,8 @@ const BarChartStackedBySign = () => {
       <Tooltip />
       <Legend />
       <ReferenceLine y={0} stroke="#000" />
-      <Bar dataKey="pv" fill="#8884d8" stackId="stack" />
-      <Bar dataKey="uv" fill="#82ca9d" stackId="stack" />
+      <Bar dataKey="pv" fill="var(--color-chart-1)" stackId="stack" />
+      <Bar dataKey="uv" fill="var(--color-chart-2)" stackId="stack" />
       <RechartsDevtools />
     </BarChart>
   );

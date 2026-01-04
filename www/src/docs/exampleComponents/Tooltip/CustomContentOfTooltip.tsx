@@ -118,7 +118,7 @@ const CustomContentOfTooltip = ({
       <YAxis width="auto" />
       <Tooltip content={CustomTooltip} isAnimationActive={isAnimationActive} defaultIndex={defaultIndex} />
       <Legend />
-      <Bar dataKey="pv" barSize={20} fill="#8884d8" isAnimationActive={isAnimationActive} />
+      <Bar dataKey="pv" barSize={20} fill="var(--color-chart-1)" isAnimationActive={isAnimationActive} />
     </BarChart>
   );
 };

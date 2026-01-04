@@ -37,8 +37,15 @@ const JointLineScatterChart = ({ defaultIndex }: { defaultIndex?: TooltipIndex }
       <ZAxis type="number" range={[100, 100]} />
       <Tooltip cursor={{ strokeDasharray: '3 3' }} defaultIndex={defaultIndex} />
       <Legend />
-      <Scatter name="A school" data={data01} fill="#8884d8" line shape="cross" />
-      <Scatter name="B school" data={data02} fill="#82ca9d" line lineJointType="monotone" shape="diamond" />
+      <Scatter name="A school" data={data01} fill="var(--color-chart-1)" line shape="cross" />
+      <Scatter
+        name="B school"
+        data={data02}
+        fill="var(--color-chart-2)"
+        line
+        lineJointType="monotone"
+        shape="diamond"
+      />
       <RechartsDevtools />
     </ScatterChart>
   );

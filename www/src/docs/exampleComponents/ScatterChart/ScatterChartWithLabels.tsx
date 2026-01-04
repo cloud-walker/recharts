@@ -28,7 +28,7 @@ const ScatterChartWithLabels = ({ defaultIndex }: { defaultIndex?: TooltipIndex 
       <XAxis type="number" dataKey="x" name="stature" unit="cm" />
       <YAxis type="number" dataKey="y" name="weight" unit="kg" width="auto" />
       <Tooltip cursor={{ strokeDasharray: '3 3' }} defaultIndex={defaultIndex} />
-      <Scatter name="A school" data={data} fill="#8884d8" activeShape={{ fill: 'green' }}>
+      <Scatter name="A school" data={data} fill="var(--color-chart-1)" activeShape={{ fill: 'green' }}>
         <LabelList dataKey="x" fill="black" />
       </Scatter>
       <ZAxis range={[900, 4000]} dataKey="z" />
