@@ -92,7 +92,7 @@ export default function CustomActiveShapePieChart({
         cy="50%"
         innerRadius="60%"
         outerRadius="80%"
-        fill="#8884d8"
+        fill="var(--color-chart-1)"
         dataKey="value"
         isAnimationActive={isAnimationActive}
       />

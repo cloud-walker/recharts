@@ -31,7 +31,7 @@ export default function Example() {
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip />
-        <Line type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
+        <Line type="monotone" dataKey="uv" stroke="var(--color-chart-1)" fill="var(--color-chart-1)" />
         <RechartsDevtools />
       </LineChart>
 
@@ -50,7 +50,7 @@ export default function Example() {
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip />
-        <Line connectNulls type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
+        <Line connectNulls type="monotone" dataKey="uv" stroke="var(--color-chart-1)" fill="var(--color-chart-1)" />
         <RechartsDevtools />
       </LineChart>
     </div>

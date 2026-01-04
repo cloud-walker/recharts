@@ -19,7 +19,7 @@ export default function PieChartWithPaddingAngle({ isAnimationActive = true }: {
         outerRadius="100%"
         // Corner radius is the rounded edge of each pie slice
         cornerRadius="50%"
-        fill="#8884d8"
+        fill="var(--color-chart-1)"
         // padding angle is the gap between each pie slice
         paddingAngle={5}
         dataKey="value"

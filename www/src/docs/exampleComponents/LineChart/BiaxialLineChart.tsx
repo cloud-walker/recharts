@@ -67,8 +67,8 @@ export default function Example() {
       <YAxis yAxisId="right" orientation="right" width="auto" />
       <Tooltip />
       <Legend />
-      <Line yAxisId="left" type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-      <Line yAxisId="right" type="monotone" dataKey="uv" stroke="#82ca9d" />
+      <Line yAxisId="left" type="monotone" dataKey="pv" stroke="var(--color-chart-1)" activeDot={{ r: 8 }} />
+      <Line yAxisId="right" type="monotone" dataKey="uv" stroke="var(--color-chart-2)" />
       <RechartsDevtools />
     </LineChart>
   );

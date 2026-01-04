@@ -1,4 +1,6 @@
-import { Label, Line, LineChart, LineProps, XAxis, YAxis } from 'recharts';
+import { Label, LineChart, LineProps, XAxis, YAxis } from 'recharts';
+
+import { Line } from '../components/chart';
 
 const characterWidth = 3;
 

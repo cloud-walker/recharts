@@ -59,8 +59,8 @@ const LineChartAxisInterval = () => {
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" interval={interval} />
       <YAxis interval={interval} width="auto" />
-      <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-      <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+      <Line type="monotone" dataKey="pv" stroke="var(--color-chart-1)" activeDot={{ r: 8 }} />
+      <Line type="monotone" dataKey="uv" stroke="var(--color-chart-2)" />
       <RechartsDevtools />
     </LineChart>
   );

@@ -67,7 +67,7 @@ const SynchronizedAreaChart = () => {
         <XAxis dataKey="name" />
         <YAxis width="auto" />
         <Tooltip />
-        <Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
+        <Area type="monotone" dataKey="uv" stroke="var(--color-chart-1)" fill="var(--color-chart-1)" />
         <RechartsDevtools />
       </AreaChart>
 
@@ -87,7 +87,7 @@ const SynchronizedAreaChart = () => {
         <XAxis dataKey="name" />
         <YAxis width="auto" />
         <Tooltip />
-        <Area type="monotone" dataKey="pv" stroke="#82ca9d" fill="#82ca9d" />
+        <Area type="monotone" dataKey="pv" stroke="var(--color-chart-2)" fill="var(--color-chart-2)" />
         <RechartsDevtools />
       </AreaChart>
     </>

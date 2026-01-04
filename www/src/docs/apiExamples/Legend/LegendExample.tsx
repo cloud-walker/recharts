@@ -1,5 +1,6 @@
-import { LineChart, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Line } from 'recharts';
+import { LineChart, XAxis, YAxis, Legend } from 'recharts';
 import { RechartsDevtools } from '@recharts/devtools';
+import { CartesianGrid, Line, Tooltip } from '../../../components/chart';
 
 // #region Sample data
 const data = [
@@ -65,8 +66,20 @@ export const LegendExample = ({ isAnimationActive = true }: { isAnimationActive?
     <CartesianGrid strokeDasharray="3 3" />
     <Tooltip />
     <Legend verticalAlign="top" height={36} />
-    <Line name="pv of pages" type="monotone" dataKey="pv" stroke="#8884d8" isAnimationActive={isAnimationActive} />
-    <Line name="uv of pages" type="monotone" dataKey="uv" stroke="#82ca9d" isAnimationActive={isAnimationActive} />
+    <Line
+      name="pv of pages"
+      type="monotone"
+      dataKey="pv"
+      stroke="var(--color-chart-1)"
+      isAnimationActive={isAnimationActive}
+    />
+    <Line
+      name="uv of pages"
+      type="monotone"
+      dataKey="uv"
+      stroke="var(--color-chart-2)"
+      isAnimationActive={isAnimationActive}
+    />
     <RechartsDevtools />
   </LineChart>
 );

@@ -1,5 +1,6 @@
-import { CartesianGrid, Legend, Line, LineChart, XAxis, YAxis } from 'recharts';
+import { Legend, LineChart, XAxis, YAxis } from 'recharts';
 import { RechartsDevtools } from '@recharts/devtools';
+import { CartesianGrid, Line } from '../../chart';
 
 // #region Sample data
 const data = [

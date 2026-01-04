@@ -1,5 +1,6 @@
-import { Area, AreaChart, CartesianGrid, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, XAxis, YAxis } from 'recharts';
 import { RechartsDevtools } from '@recharts/devtools';
+import { CartesianGrid, Tooltip } from '../../../components/chart';
 
 // #region Sample data
 const data = [
@@ -57,12 +58,12 @@ const AreaChartExample = ({ isAnimationActive = true }) => (
   >
     <defs>
       <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
-        <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
+        <stop offset="5%" stopColor="var(--color-chart-1)" stopOpacity={0.8} />
+        <stop offset="95%" stopColor="var(--color-chart-1)" stopOpacity={0} />
       </linearGradient>
       <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8} />
-        <stop offset="95%" stopColor="#82ca9d" stopOpacity={0} />
+        <stop offset="5%" stopColor="var(--color-chart-2)" stopOpacity={0.8} />
+        <stop offset="95%" stopColor="var(--color-chart-2)" stopOpacity={0} />
       </linearGradient>
     </defs>
     <CartesianGrid strokeDasharray="3 3" />
@@ -72,17 +73,23 @@ const AreaChartExample = ({ isAnimationActive = true }) => (
     <Area
       type="monotone"
       dataKey="uv"
-      stroke="#8884d8"
+      stroke="var(--color-chart-1)"
       fillOpacity={1}
       fill="url(#colorUv)"
+      activeDot={{
+        stroke: 'var(--color-surface-base)',
+      }}
       isAnimationActive={isAnimationActive}
     />
     <Area
       type="monotone"
       dataKey="pv"
-      stroke="#82ca9d"
+      stroke="var(--color-chart-2)"
       fillOpacity={1}
       fill="url(#colorPv)"
+      activeDot={{
+        stroke: 'var(--color-surface-base)',
+      }}
       isAnimationActive={isAnimationActive}
     />
     <RechartsDevtools />

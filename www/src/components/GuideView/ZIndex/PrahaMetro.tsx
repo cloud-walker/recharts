@@ -1,7 +1,6 @@
 // #region Imports, data, and helper functions
 import {
   LabelList,
-  Line,
   LineChart,
   LineProps,
   ReferenceDot,
@@ -12,6 +11,7 @@ import {
   LabelListEntry,
 } from 'recharts';
 import { RechartsDevtools } from '@recharts/devtools';
+import { Line } from '../../chart';
 
 const AirplaneIcon = () => (
   // https://upload.wikimedia.org/wikipedia/commons/7/7d/Plane_icon.svg
@@ -198,7 +198,12 @@ function MetroLine(props: LineProps) {
       type="monotone"
       dataKey="yPos"
       strokeWidth={15}
-      dot={{ strokeWidth: 3, stroke: '#fff', r: 10, fill: props.stroke }}
+      dot={{
+        strokeWidth: 3,
+        stroke: 'var(--color-surface-base)',
+        r: 10,
+        fill: props.stroke,
+      }}
       isAnimationActive={false}
       activeDot={false}
       {...props}

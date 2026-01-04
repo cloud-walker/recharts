@@ -1,5 +1,7 @@
-import { RadialBarChart, RadialBar, Legend, Tooltip } from 'recharts';
+import { RadialBarChart, RadialBar, Legend } from 'recharts';
 import { RechartsDevtools } from '@recharts/devtools';
+
+import { Tooltip } from '../../../components/chart';
 
 // #region Sample data
 const data = [
@@ -7,43 +9,43 @@ const data = [
     name: '18-24',
     uv: 31.47,
     pv: 2400,
-    fill: '#8884d8',
+    fill: 'var(--color-chart-1)',
   },
   {
     name: '25-29',
     uv: 26.69,
     pv: 4567,
-    fill: '#83a6ed',
+    fill: 'var(--color-chart-7)',
   },
   {
     name: '30-34',
     uv: -15.69,
     pv: 1398,
-    fill: '#8dd1e1',
+    fill: 'var(--color-chart-4)',
   },
   {
     name: '35-39',
     uv: 8.22,
     pv: 9800,
-    fill: '#82ca9d',
+    fill: 'var(--color-chart-2)',
   },
   {
     name: '40-49',
     uv: -8.63,
     pv: 3908,
-    fill: '#a4de6c',
+    fill: 'var(--color-chart-5)',
   },
   {
     name: '50+',
     uv: -2.63,
     pv: 4800,
-    fill: '#d0ed57',
+    fill: 'var(--color-chart-6)',
   },
   {
     name: 'unknown',
     uv: 6.67,
     pv: 4800,
-    fill: '#ffc658',
+    fill: 'var(--color-chart-3)',
   },
 ];
 
@@ -61,8 +63,10 @@ export const RadialBarChartExample = ({ isAnimationActive = true }: { isAnimatio
     endAngle={0}
   >
     <RadialBar
-      label={{ fill: '#666', position: 'insideStart' }}
-      background
+      label={{ fill: 'var(--color-surface-base)', position: 'insideStart' }}
+      background={{
+        fill: 'var(--color-gray)',
+      }}
       dataKey="uv"
       isAnimationActive={isAnimationActive}
     />

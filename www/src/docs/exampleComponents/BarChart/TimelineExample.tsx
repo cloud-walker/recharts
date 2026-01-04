@@ -1,5 +1,6 @@
-import { Bar, BarChart, BarProps, CartesianGrid, Rectangle, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, BarProps, Rectangle, Tooltip, XAxis, YAxis } from 'recharts';
 import { RechartsDevtools } from '@recharts/devtools';
+import { CartesianGrid } from '../../../components/chart';
 
 // #region Data and helper functions
 type TimelineDataType = {

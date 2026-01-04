@@ -28,7 +28,7 @@ const SimpleScatterChart = ({ defaultIndex }: { defaultIndex?: TooltipIndex }) =
       <XAxis type="number" dataKey="x" name="stature" unit="cm" />
       <YAxis type="number" dataKey="y" name="weight" unit="kg" width="auto" />
       <Tooltip cursor={{ strokeDasharray: '3 3' }} defaultIndex={defaultIndex} />
-      <Scatter activeShape={{ fill: 'red' }} name="A school" data={data} fill="#8884d8" />
+      <Scatter activeShape={{ fill: 'red' }} name="A school" data={data} fill="var(--color-chart-1)" />
       <RechartsDevtools />
     </ScatterChart>
   );

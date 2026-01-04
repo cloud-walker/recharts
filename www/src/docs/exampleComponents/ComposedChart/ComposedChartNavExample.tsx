@@ -1,4 +1,5 @@
-import { ComposedChart, Line, Bar } from 'recharts';
+import { ComposedChart, Bar } from 'recharts';
+import { Line } from '../../../components/chart';
 
 const ComposedChartNavExample = () => {
   return (
@@ -12,8 +13,8 @@ const ComposedChartNavExample = () => {
         { val: 4, val2: 3 },
       ]}
     >
-      <Line type="monotone" dataKey="val" stroke="#8884d8" strokeWidth={2} dot={false} />
-      <Bar dataKey="val2" fill="#82ca9d" />
+      <Line type="monotone" dataKey="val" stroke="var(--color-chart-1)" strokeWidth={2} dot={false} />
+      <Bar dataKey="val2" fill="var(--color-chart-2)" />
     </ComposedChart>
   );
 };

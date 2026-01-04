@@ -1,5 +1,6 @@
-import { Line, LineChart } from 'recharts';
+import { LineChart } from 'recharts';
 import { RechartsDevtools } from '@recharts/devtools';
+import { Line } from '../../chart';
 
 export default function StaticDimensionChart() {
   return (

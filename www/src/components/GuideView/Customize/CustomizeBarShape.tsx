@@ -72,7 +72,7 @@ export default function CustomizeBarShape() {
     <BarChart width={600} height={300} data={data} margin={margin}>
       <XAxis dataKey="name" />
       <YAxis />
-      <Bar dataKey="uv" fill="#8884d8" shape={TriangleBar} />
+      <Bar dataKey="uv" fill="var(--color-chart-1)" shape={TriangleBar} />
       <RechartsDevtools />
     </BarChart>
   );

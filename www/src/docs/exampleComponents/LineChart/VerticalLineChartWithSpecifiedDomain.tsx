@@ -67,8 +67,8 @@ export default function Example() {
       <YAxis dataKey="name" type="category" width="auto" />
       <Tooltip />
       <Legend />
-      <Line dataKey="pv" stroke="#8884d8" />
-      <Line dataKey="uv" stroke="#82ca9d" />
+      <Line dataKey="pv" stroke="var(--color-chart-1)" />
+      <Line dataKey="uv" stroke="var(--color-chart-2)" />
       <RechartsDevtools />
     </LineChart>
   );

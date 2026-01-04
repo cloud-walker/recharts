@@ -1,5 +1,6 @@
-import { ComposedChart, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Area, Bar, Line } from 'recharts';
+import { ComposedChart, XAxis, YAxis, Tooltip, Legend, Area, Bar, Line } from 'recharts';
 import { RechartsDevtools } from '@recharts/devtools';
+import { CartesianGrid } from '../../../components/chart';
 
 // #region Sample data
 const data = [
@@ -54,14 +55,20 @@ const ComposedChartExample = ({ isAnimationActive = true }: { isAnimationActive?
     responsive
     data={data}
   >
-    <CartesianGrid stroke="#f5f5f5" />
+    <CartesianGrid />
     <XAxis dataKey="name" />
     <YAxis width="auto" />
     <Legend />
     <Tooltip />
-    <Area type="monotone" dataKey="amt" fill="#8884d8" stroke="#8884d8" isAnimationActive={isAnimationActive} />
-    <Bar dataKey="pv" barSize={20} fill="#413ea0" isAnimationActive={isAnimationActive} />
-    <Line type="monotone" dataKey="uv" stroke="#ff7300" isAnimationActive={isAnimationActive} />
+    <Area
+      type="monotone"
+      dataKey="amt"
+      fill="var(--color-chart-1)"
+      stroke="var(--color-chart-1)"
+      isAnimationActive={isAnimationActive}
+    />
+    <Bar dataKey="pv" barSize={20} fill="var(--color-chart-9)" isAnimationActive={isAnimationActive} />
+    <Line type="monotone" dataKey="uv" stroke="var(--color-chart-8)" isAnimationActive={isAnimationActive} />
     <RechartsDevtools />
   </ComposedChart>
 );

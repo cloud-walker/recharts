@@ -37,7 +37,7 @@ export default function PieChartWithCustomizedLabel({ isAnimationActive = true }
         data={data}
         labelLine={false}
         label={renderCustomizedLabel}
-        fill="#8884d8"
+        fill="var(--color-chart-1)"
         dataKey="value"
         isAnimationActive={isAnimationActive}
       >

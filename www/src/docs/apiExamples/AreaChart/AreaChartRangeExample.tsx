@@ -29,7 +29,12 @@ const AreaChartRangeExample = ({ isAnimationActive = true }) => (
   >
     <XAxis dataKey="day" />
     <YAxis width="auto" />
-    <Area dataKey="temperature" stroke="#8884d8" fill="#8884d8" isAnimationActive={isAnimationActive} />
+    <Area
+      dataKey="temperature"
+      stroke="var(--color-chart-1)"
+      fill="var(--color-chart-1)"
+      isAnimationActive={isAnimationActive}
+    />
     <Tooltip />
     <RechartsDevtools />
   </AreaChart>

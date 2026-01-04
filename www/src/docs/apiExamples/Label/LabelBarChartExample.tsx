@@ -73,7 +73,7 @@ const LabelBarChartExample = ({ isAnimationActive = true }: { isAnimationActive?
         textAnchor: 'middle',
       }}
     />
-    <Bar dataKey="pv" fill="#8884d8" isAnimationActive={isAnimationActive}>
+    <Bar dataKey="pv" fill="var(--color-chart-1)" isAnimationActive={isAnimationActive}>
       <LabelList dataKey="name" position="top" />
     </Bar>
     <RechartsDevtools />

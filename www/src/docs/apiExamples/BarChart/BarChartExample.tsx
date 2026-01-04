@@ -1,5 +1,6 @@
-import { BarChart, Legend, XAxis, YAxis, CartesianGrid, Tooltip, Bar } from 'recharts';
+import { BarChart, Legend, XAxis, YAxis, Tooltip, Bar } from 'recharts';
 import { RechartsDevtools } from '@recharts/devtools';
+import { CartesianGrid } from '../../../components/chart';
 
 // #region Sample data
 const data = [
@@ -46,10 +47,14 @@ const BarChartExample = ({ isAnimationActive = true }) => (
     <CartesianGrid strokeDasharray="3 3" />
     <XAxis dataKey="name" />
     <YAxis width="auto" />
-    <Tooltip />
+    <Tooltip
+      cursor={{
+        fill: 'var(--color-interactive-3)',
+      }}
+    />
     <Legend />
-    <Bar dataKey="pv" fill="#8884d8" isAnimationActive={isAnimationActive} />
-    <Bar dataKey="uv" fill="#82ca9d" isAnimationActive={isAnimationActive} />
+    <Bar dataKey="pv" fill="var(--color-chart-1)" isAnimationActive={isAnimationActive} />
+    <Bar dataKey="uv" fill="var(--color-chart-2)" isAnimationActive={isAnimationActive} />
     <RechartsDevtools />
   </BarChart>
 );

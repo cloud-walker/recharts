@@ -1,5 +1,6 @@
-import { CartesianGrid, Legend, Line, LineChart, XAxis, YAxis } from 'recharts';
+import { Legend, LineChart, XAxis, YAxis } from 'recharts';
 import { RechartsDevtools } from '@recharts/devtools';
+import { Line, CartesianGrid } from '../../chart';
 
 // #region Sample data
 const data = [
@@ -55,7 +56,7 @@ export default function Step3() {
         left: 0,
       }}
     >
-      <CartesianGrid stroke="#aaa" strokeDasharray="5 5" />
+      <CartesianGrid strokeDasharray="5 5" />
       <Line type="monotone" dataKey="uv" stroke="purple" strokeWidth={2} name="My data series name" />
       <XAxis dataKey="name" />
       <YAxis width="auto" label={{ value: 'UV', position: 'insideLeft', angle: -90 }} />

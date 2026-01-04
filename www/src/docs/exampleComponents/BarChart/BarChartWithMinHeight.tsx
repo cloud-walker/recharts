@@ -58,7 +58,7 @@ const renderCustomizedLabel = (props: LabelProps) => {
 
   return (
     <g>
-      <circle cx={Number(x) + Number(width) / 2} cy={Number(y) - radius} r={radius} fill="#8884d8" />
+      <circle cx={Number(x) + Number(width) / 2} cy={Number(y) - radius} r={radius} fill="var(--color-chart-1)" />
       <text
         x={Number(x) + Number(width) / 2}
         y={Number(y) - radius}
@@ -90,10 +90,10 @@ const BarChartWithMinHeight = () => {
       <YAxis width="auto" />
       <Tooltip />
       <Legend />
-      <Bar dataKey="pv" fill="#8884d8" minPointSize={5}>
+      <Bar dataKey="pv" fill="var(--color-chart-1)" minPointSize={5}>
         <LabelList dataKey="name" content={renderCustomizedLabel} />
       </Bar>
-      <Bar dataKey="uv" fill="#82ca9d" minPointSize={10} />
+      <Bar dataKey="uv" fill="var(--color-chart-2)" minPointSize={10} />
       <RechartsDevtools />
     </BarChart>
   );

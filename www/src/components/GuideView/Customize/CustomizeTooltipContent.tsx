@@ -78,7 +78,7 @@ function CustomTooltip({ payload, label, active }: any) {
         className="custom-tooltip"
         style={{
           border: '1px solid #d88488',
-          backgroundColor: '#fff',
+          backgroundColor: 'var(--color-surface-raised)',
           padding: '10px',
           borderRadius: '5px',
           boxShadow: '1px 1px 2px #d88488',
@@ -88,7 +88,7 @@ function CustomTooltip({ payload, label, active }: any) {
         <p className="intro" style={{ margin: '0' }}>
           {getIntroOfPage(label)}
         </p>
-        <p className="desc" style={{ margin: '0', borderTop: '1px dashed #f5f5f5' }}>
+        <p className="desc" style={{ margin: '0', borderTop: '1px dashed var(--color-border-2)' }}>
           Anything you want can be displayed here.
         </p>
       </div>
@@ -104,7 +104,7 @@ export default function CustomizeTooltipContent() {
       <XAxis dataKey="name" />
       <YAxis />
       <Tooltip content={CustomTooltip} defaultIndex={2} active />
-      <Bar dataKey="uv" fill="#8884d8" />
+      <Bar dataKey="uv" fill="var(--color-chart-1)" />
       <RechartsDevtools />
     </BarChart>
   );

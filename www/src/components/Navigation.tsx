@@ -23,8 +23,17 @@ function DesktopNav() {
           </li>
         ))}
       </ul>
-      <LocaleSwitch />
-      {import.meta.env.VITE_IS_DARKMODE_ENABLED === 'true' && <ColorModePicker />}
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '1.5rem',
+          paddingInlineEnd: '20px',
+        }}
+      >
+        <LocaleSwitch />
+        {import.meta.env.VITE_IS_DARKMODE_ENABLED === 'true' && <ColorModePicker />}
+      </div>
     </nav>
   );
 }
@@ -147,8 +156,18 @@ function SlideRightMobileNav({ isOpen, onClose }: { isOpen: boolean; onClose: ()
             );
           })}
         </ul>
-        <LocaleSwitch />
-        {import.meta.env.VITE_IS_DARKMODE_ENABLED === 'true' && <ColorModePicker />}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '1.5rem',
+            paddingInline: '20px',
+            paddingBlockStart: '10px',
+          }}
+        >
+          <LocaleSwitch />
+          {import.meta.env.VITE_IS_DARKMODE_ENABLED === 'true' && <ColorModePicker />}
+        </div>
       </div>
     </>
   );

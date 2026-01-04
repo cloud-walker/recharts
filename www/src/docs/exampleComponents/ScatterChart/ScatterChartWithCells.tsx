@@ -29,7 +29,7 @@ export default function ScatterChartWithCells() {
       <XAxis type="number" dataKey="x" name="stature" unit="cm" />
       <YAxis type="number" dataKey="y" name="weight" unit="kg" width="auto" />
       <Tooltip cursor={{ strokeDasharray: '3 3' }} />
-      <Scatter name="A school" data={data} fill="#8884d8">
+      <Scatter name="A school" data={data} fill="var(--color-chart-1)">
         {data.map((_entry, index) => (
           <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
         ))}
